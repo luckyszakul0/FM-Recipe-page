@@ -1,0 +1,49 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+@font-face {
+    font-family: YoungSerif;
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oufit;
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+.recipe-name{
+    @include typography(2.5rem, 100%, 400);
+    font-family: YoungSerif;
+    color: $stone900;
+}
+
+.section{
+
+    &--header{
+        @include typography(1.75rem, 100%, 400);
+        font-family: YoungSerif;
+        color: $brown800;
+    }
+
+    &--text{
+        @include typography(1rem, 150%, 400);
+        font-family: Oufit;
+        color: $stone600;
+
+        &--bold{
+            @extend .section--text;
+            font-weight: 700;
+        }
+    }
+}
+
+.info--header{
+    @include typography(1.25rem, 100%, 600);
+    font-family: Oufit;
+    color: $rose800;
+}
+
+.nutrition--value{
+    @extend .section--text--bold;
+    color: $brown800;
+}
