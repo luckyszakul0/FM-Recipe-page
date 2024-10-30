@@ -1,8 +1,53 @@
+@use './variables' as *;
+@use './mixins' as *;
 
+body{
+    background-color: $stone100;
+    @include flex(center, center);
+}
 
-.attribution{ 
-    font-size: 11px; 
-    text-align: center; 
+.container{
+    background-color: $white;
+}
+
+.main-content{
+    padding: 2.5rem 2rem;
+    @include flex(center, center, column, 2rem);
+}
+
+.introduction{
+    @include flex(center, center, column, 1.5rem);
+}
+
+.info{
+    width: 100%;
+    background-color: $rose50;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    
+    &--heading{
+        margin-bottom: 1rem;
+    }
+
+    &--list{
+        
+        & li{
+            margin: 0.5rem 2rem 0.5rem 1.5rem;
+
+            &::marker{
+                color: $rose800;
+            }
+        }
+    }
+}
+
+.attribution{
+    font-family: Oufit;
+    font-size: 12px; 
+    text-align: center;
+    position: fixed;
+    bottom: 2px;
+    opacity: 0.75;
 }
 
 .attribution a{ 
