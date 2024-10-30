@@ -19,7 +19,7 @@
 
 .section{
 
-    &--header{
+    &--heading{
         @include typography(1.75rem, 100%, 400);
         font-family: YoungSerif;
         color: $brown800;
@@ -37,7 +37,7 @@
     }
 }
 
-.info--header{
+.info--heading{
     @include typography(1.25rem, 100%, 600);
     font-family: Oufit;
     color: $rose800;
