@@ -23,7 +23,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/mobile-first-recipe-page-made-with-scss-Ku9FfmY9yg)
 - Live Site URL: [Github Pages](https://luckyszakul0.github.io/FM-Recipe-page/)
 
 ## My process
