@@ -24,7 +24,8 @@
       <section class="info">
         <h2 class="info--heading">Preparation time</h2>
         <ul class="info--list">
-          <li><span class="d"><span class="section--text--bold">Total</span>: Approximately 10 minutes</span></li>
+          <!--Additional span tag is used in some list items to make sure the second line of text does not start earlier then the first-->
+          <li><span><span class="section--text--bold">Total</span>: Approximately 10 minutes</span></li>
           <li><span class="section--text--bold">Preparation</span>: 5 minutes</li>
           <li><span class="section--text--bold">Cooking</span>: 5 minutes</li>
         </ul>
@@ -44,7 +45,7 @@
         <h2 class="section--heading">Instructions</h2>
         <ol class="instructions--list">
           <li><span class="section--text--bold">Beat the eggs</span>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
-          <li><span class="section--text--bold">Heat the pan</span></li>: Place a non-stick frying pan over medium heat and add butter or oil.
+          <li><span class="section--text--bold">Heat the pan</span>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
           <li><span class="section--text--bold">Cook the omelette</span>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
           <li><span class="section--text--bold">Add fillings (optional)</span>: When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
           <li><span class="section--text--bold">Fold and serve</span>: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
@@ -54,22 +55,24 @@
       <div class="divider"></div>
       <section class="nutrition">
         <h2 class="section--heading">Nutrition</h2>
-        <p>The table below shows nutritional values per serving without the additional fillings.</p>
-        <div>
-          Calories
-          <span class="nutrition--value">277kcal</span>
-        </div>
-        <div>
-          Carbs
-          <span class="nutrition--value">0g</span>
-        </div>
-        <div>
-          Protein
-          <span class="nutrition--value">20g</span>
-        </div>
-        <div>
-          Fat
-          <span class="nutrition--value">22g</span>
+        <p class="nutrition--text">The table below shows nutritional values per serving without the additional fillings.</p>
+        <div class="nutrition--grid">
+          <!-- <div> -->
+            <p>Calories</p>
+            <span class="nutrition--value">277kcal</span>
+          <!-- </div> -->
+          <!-- <div> -->
+            <p>Carbs</p>
+            <span class="nutrition--value">0g</span>
+          <!-- </div> -->
+          <!-- <div> -->
+            <p>Protein</p>
+            <span class="nutrition--value">20g</span>
+          <!-- </div> -->
+          <!-- <div> -->
+            <p class="last-element">Fat</p>
+            <span class="nutrition--value last-element">22g</span>
+          <!-- </div> -->
         </div>
       </section>
     </main>
